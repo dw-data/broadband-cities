@@ -48,6 +48,7 @@ https://console.cloud.google.com/bigquery?sq=754187384106:a47c12beb9064ec0afde59
 Here is a step-by-step-explanation of the code we used in this analysis. You can explore it yourself by opening `broadband_cities.Rmd` in RStudio.
 
 ```{r setup, echo = FALSE}
+knitr::opts_chunk$set(echo = FALSE)
 #load packages and DW colours
 
 knitr::opts_knit$set(root.dir = "/Users/schachtk/Documents/DW/179_182_broadband_cities")

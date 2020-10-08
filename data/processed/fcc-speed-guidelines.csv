@@ -1,0 +1,16 @@
+﻿category;activity;mbps
+General Usage;General Browsing and Email;1,0
+General Usage;Streaming Online Radio;0,5
+General Usage;VoIP Calls;0,5
+General Usage;Student;25,0
+General Usage;Telecommuting;25,0
+General Usage;File Downloading;10,0
+General Usage;Social Media;1,0
+Watching Video;Streaming Standard Definition Video;4,0
+Watching Video;Streaming High Definition (HD) Video;8,0
+Watching Video;Streaming Ultra HD 4K Video;25,0
+Video Conferencing;Standard Personal Video Call (e.g., Skype);1,0
+Video Conferencing;HD Personal Video Call (e.g., Skype);1,5
+Video Conferencing;HD Video Teleconferencing;6,0
+Gaming;Game Console Connecting to the Internet;3,0
+Gaming;Online Multiplayer;4,0

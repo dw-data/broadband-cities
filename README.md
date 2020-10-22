@@ -8,12 +8,10 @@ divide?
 *In this repository, you will find the methodology, data and code behind
 the story that came out of this analysis.*
 
-**Read the full article on DW:** [English](https://www.dw.com/a-xxx) |
-[German](https://www.dw.com/a-xxx)
+**Read the full article on DW:** [English](https://p.dw.com/p/3jdPr) | [German](https://p.dw.com/p/3jgXC)
 
 **Story by:** [Kira Schacht](https://www.twitter.com/daten_drang) and
-[Peter
-Hille](https://twitter.com/peterhille)
+[Peter Hille](https://twitter.com/peterhille)
 
 # Files
 

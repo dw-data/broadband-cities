@@ -31,8 +31,7 @@ speeds around the world. We use the results of their off-network
 measurements (NDT tests). The data is crowdsources, updated continuously
 and made freely available to the public. You can get more information
 about their datasets as well as a guide on how to get started in working
-with it yourself on their
-\[website\](<https://www.measurementlab.net/data/>.
+with it yourself on their [website](https://www.measurementlab.net/data/).
 
   - For data on median values per city, we used their
     [Dashboard](https://datastudio.google.com/reporting/12XddYj7__cZOaBF2RwplImw_ZdQQ5Nuw/page/9GTNB)
@@ -48,12 +47,10 @@ with it yourself on their
 ## Geodata
 
   - UN Statistics Division: [Standard country or area codes for
-    statistical use
-    (M49)](https://unstats.un.org/unsd/methodology/m49/): country codes
+    statistical use (M49)](https://unstats.un.org/unsd/methodology/m49/): country codes
     and corresponding regions and continents
   - UN Department of Economic and Social Affairs: [The World’s Cities
-    in 2018 Data
-    Booklet](https://www.un.org/en/events/citiesday/assets/pdf/the_worlds_cities_in_2018_data_booklet.pdf):
+    in 2018 Data Booklet](https://www.un.org/en/events/citiesday/assets/pdf/the_worlds_cities_in_2018_data_booklet.pdf):
     population of cities with at least 1 million inhabitants
 
 # Analysis
@@ -120,16 +117,12 @@ List of datasets used:
   - `d_cities` All data points since 2019-01-01 for Berlin, Budapest and
     Lagos
 
-<!-- end list -->
 
 ``` r
 ggplot(d, aes(mbps, n)) + geom_point()
 ```
 
-![](broadband_cities_files/figure-gfm/unnamed-chunk-2-1.png)<!-- -->
-When cities have fewer than approx. 500,000 data points, download speeds
-vary
-more.
+When cities have fewer than approx. 500,000 data points, download speeds vary more.
 
 ## 1\. Median speed in cities of the world
 
@@ -146,8 +139,7 @@ File: `cities-median-selection.csv`
 
 ## 1.2 Top and flop list per continent
 
-Only including cities with a population of \>=
-1mn.
+Only including cities with a population of \>= 1mn.
 
 ``` r
 x = d %>% filter(!is.na(population)) %>% select(continent, country, city, mbps) %>% 
@@ -184,7 +176,6 @@ finalise_dwplot(plot,"Source: M-Lab", "graphics/preliminary/179_en_broadband_ran
                 width_pixels=1920, height_pixels= 2700)
 ```
 
-![](broadband_cities_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
 ![179\_en\_broadband\_ranking.png](graphics/final/png/179_en_broadband_ranking.png)
 
 ### 1.3 Speeds per continent by city and population
@@ -221,8 +212,7 @@ finalise_dwplot(plot,"Source: M-Lab 2020, UN Data | Methodology: github.com/dw-d
                 width_pixels=1920, height_pixels= 2700)
 ```
 
-![](broadband_cities_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->
-![180\_en\_broadband\_continent.png](graphics/final/png/180_en_broadband_continent.png)
+![180\_en\_broadband\_continents.png](graphics/final/png/180_en_broadband_continents.png)
 
 ## 2\. Internet speeds in selected cities
 
@@ -280,7 +270,7 @@ ggplot(d_cities, aes(x = mbps, y = city)) +
 
     ## Warning: Removed 146825 rows containing non-finite values (stat_boxplot).
 
-![](broadband_cities_files/figure-gfm/unnamed-chunk-8-1.png)<!-- -->
+![](broadband_cities_files/figure-gfm/unnamed-chunk-8-1.png)
 
 ``` r
 d_cities_quantiles = d_cities %>% group_by(city) %>%
@@ -326,7 +316,6 @@ finalise_dwplot(plot,"Source: M-Lab", "graphics/preliminary/181_en_broadband_dis
 
     ## Warning: Removed 2 row(s) containing missing values (geom_path).
 
-![](broadband_cities_files/figure-gfm/unnamed-chunk-9-1.png)<!-- -->
 ![181\_en\_broadband\_distribution.png](graphics/final/png/181_en_broadband_distribution.png)
 
 ## 3\. Country-level comparison
@@ -358,5 +347,4 @@ finalise_dwplot(plot,"Source: Inclusive Internet Index", "graphics/preliminary/1
                 width_pixels=1920, height_pixels= 2700)
 ```
 
-![](broadband_cities_files/figure-gfm/unnamed-chunk-10-1.png)<!-- -->
 ![182\_en\_broadband\_index.png](graphics/final/png/182_en_broadband_index.png)
